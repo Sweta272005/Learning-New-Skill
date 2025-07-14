@@ -1,0 +1,8 @@
+//largest element in the array
+#include <bits/stdc++.h>
+//using namespace std;
+
+int main() {
+    cout << "Hello, Sweta!" << endl;
+    return 0;
+}

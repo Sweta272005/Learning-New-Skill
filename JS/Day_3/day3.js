@@ -73,4 +73,70 @@ do {
 
 
 //5. For - of loop 
-//(helps to iterate on some special datatypes)
+/*
+(helps to iterate on some special datatypes)
+(works on the stringd and arrays to work on there each element)
+#
+for(let val of strval){
+   //do some work
+}
+*/
+let str = "SwetaYadav";
+//here i is iterator  -> characters
+for(let i of str) {     //no initialization,updation,condition needed
+    console.log("i = ",i);
+}
+//to count the length of string
+let Str = "SwetaYadav";
+let size = 0;
+for(let i of str) {    
+    console.log("i = ",i);
+    size++;
+}
+console.log(size);
+
+
+//6. For in loop
+/*
+(heps to access the keys of the value also)
+for(let key in objvar){
+    //do some work
+}
+*/
+let student = {
+    name : "Sweta Yadav",
+    age: 19,
+    cgpa: 7.5,
+    isPass: true
+};
+
+for(let key in student) {
+    console.log("key = ",key , "value = ",student[key]);
+}
+
+
+
+//Topic_2(practice questions)
+//1 (print all even number from 0 to 100)
+let count = 0;
+for(let k = 0;k<=100;k++) {
+    if(k%2==0) {
+        console.log(k);
+        count++
+    }
+    console.log(count);
+}
+
+//2(game)
+let gameNum = 25;
+let userNum = prompt("Guess the number: ");
+
+while(userNum != gameNum) {
+    userNum = prompt("You enter wrong number , Guess again: ");
+}
+console.log("Congratulations, you entered the right number");
+
+
+
+
+//Topic_3(Strings)

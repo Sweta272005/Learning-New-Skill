@@ -1,0 +1,76 @@
+/* 1. */
+* {
+    margin: 0;     /* by default we set this */
+    padding: 0;
+}
+body {
+    background-color: #546887; /* gives the backgroung colour */
+    text-align: center;   /* aligns the text in the centre */
+}
+.container {
+    height: 70vh; /* says that 70% of webpage part will be for the container */
+    display: flex; /*comes the boxes in same line */
+    justify-content: center; /*the whole box pattern comes in centre */
+    align-items: center;
+}
+
+.game {
+    height: 60vmin; /* gives 60% part to the game */
+    width: 60vmin;
+    display: flex; /*comes the boxes in same line */
+    flex-wrap: wrap;   /* if there is no space come in next line (box will arrange like a matrix now) */
+    justify-content: center; /*the whole box pattern comes in centre */
+    align-items: center;
+    gap: 1.5vmin;   /* gives gap b/w the boxes */
+}
+
+.box {
+    height: 18vmin;   /* 20% of the part to the each of 3 boxes */
+    width: 18vmin;
+    border-radius: 1rem;  /* makes the edges curved */
+    border: none;  /* auto generated borders will removed */
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);  /* gives the shadow to create 3d effect */
+    font-size: 8vmin;  /* colour of x and o */
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+
+}
+/* for styling the new button , winner */
+
+/* new btn content same like reset bbutton */
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;  /* hide when not nessasary to show like winner text on page */
+}

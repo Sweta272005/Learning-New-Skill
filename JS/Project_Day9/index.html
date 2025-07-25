@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">  <!--links the css file to the html rel tells browser that it is css file and href points to the file named style.css -->
+</head>
+<body>
+    <div class="msg-container hide">  <!-- hide causes only needed after game finish before not needed -->
+        <p id="msg">Winner</p>   <!-- pops a message of winner also the id can be used to access this whole div para-->
+        <button id="new-btn">New Game</button>  <!-- after getting the winner start the new game for that this button -->
+    </div>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="container">   <!-- the conatiner class stores a game class which further stores the needed element-->
+            <div class="game"> 
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                
+            </div>
+        </div> 
+        <button id="reset-btn">Reset Game</button>
+    </main>
+    <script src="app.js"></script>
+    
+</body>
+</html>

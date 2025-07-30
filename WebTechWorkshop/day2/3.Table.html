@@ -1,0 +1,62 @@
+<!DOCTYPE html>  <!-- defines the document type and version of HTML -->
+<html lang="en">  <!-- root element of HTML document with language set to English -->
+
+<head>
+    <meta charset="utf-8">  <!-- sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- responsive design for all devices -->
+    <title>
+        HTML Table  <!-- title of the page shown in browser tab -->
+    </title>
+</head>
+
+<body>  <!-- starts the body of the HTML document -->
+    <table border="1">      <!-- gives border around blocks -->
+        <caption>My first Table</caption>  <!-- title/caption of the table -->
+        <colgroup>  <!-- defines a group of columns to apply styles -->
+            <col style="background-color: aquamarine;">  <!-- color set for 1st column -->
+            <col style="background-color:yellow">  <!-- color set for 2nd column -->
+        </colgroup>
+        <thead>  <!-- defines the header section of the table -->
+            <tr>                    <!-- used for representing first row -->
+                <th>Mod</th>         <!-- used for filling data in row1 column1 as header -->
+                <th>Tue</th>         <!-- used for filling data in row1 column2 as header -->
+                <th>Wed</th>         <!-- used for filling data in row1 column3 as header -->
+                <th>Thu</th>         <!-- used for filling data in row1 column4 as header -->
+                <th>Fri</th>         <!-- used for filling data in row1 column5 as header -->
+                <th>Sat</th>         <!-- used for filling data in row1 column6 as header -->
+            </tr>
+            <tr>                    <!-- next 2nd row assigned -->
+                <td>100</td>        <!-- column data of 2nd row -->
+                <td>200</td>        <!-- column data of 2nd row -->
+                <td>300</td>        <!-- column data of 2nd row -->
+                <td>400</td>        <!-- column data of 2nd row -->
+                <td>500</td>        <!-- column data of 2nd row -->
+                <td>600</td>        <!-- column data of 2nd row -->
+            </tr>
+            <tr>                    <!-- 3rd row starts -->
+                <td rowspan="2">100</td>  <!-- merge 2 rows vertically, occupies 1st column for two rows -->
+                <td>200</td>        <!-- column data of 3rd row -->
+                <td>300</td>        <!-- column data of 3rd row -->
+                <td>400</td>        <!-- column data of 3rd row -->
+                <td colspan="2" align="center">500</td>  <!-- merge 2 columns horizontally, centered text -->
+            </tr>
+            <tr>                    <!-- 4th row starts -->
+                <td>200</td>        <!-- column data of 4th row -->
+                <td>300</td>        <!-- column data of 4th row -->
+                <td>400</td>        <!-- column data of 4th row -->
+                <td>500</td>        <!-- column data of 4th row -->
+                <td>600</td>        <!-- column data of 4th row -->
+            </tr>
+        </thead>
+        <tbody></tbody>        <!-- empty body section (can be used for additional data rows) -->
+        <tfoot></tfoot>        <!-- empty footer section (can be used for totals or notes) -->
+    </table>
+    <img width = "350" src = "img.jpg" alt="this is a image"><br><br>
+    <a href="https://google.com">Google</a>
+</body>
+
+</html>  <!-- end of HTML document -->
+
+
+
+

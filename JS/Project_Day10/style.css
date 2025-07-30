@@ -1,0 +1,81 @@
+/* 
+we got images and all html mentioned things on our screen now we have to style them in a format for that. we'll be using style.css now 
+step 9 onwards
+*/
+
+* {                           /* 9.Mrgin padding = 0 , link this to html by writing there step 9 */
+    margin: 0;
+    padding: 0;        
+    text-align: center;       /* all doument text align centre */
+  }
+  
+  /* 10.Start styling from our h1 heading */
+  h1 {                      
+    background-color: #081b31;  /* background color of website */
+    color: #fff;     /* color here means text color */
+    height: 5rem;      /* height of heading */
+    line-height: 5rem;   /* */
+  }
+  
+  /* 11.Start styling the choices now */
+  .choice {                            /* select by class */
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;    /* helps to alighn the black border while cursor on that choice to look that black cirle as border*/
+    align-items: center;
+  }
+  
+/* 14. when we hover over choices something should happen */
+  .choice:hover {     
+    cursor: pointer;    /* arrow cursor changes to hand pointer */
+    background-color: #081b31;  /* generates a black colour around our choice */
+  }
+ /* 12. images organisation */ 
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;   /* makes them look good doen't look like they are distorted */
+    border-radius: 50%;   /* makes them circle */
+  }
+  
+  /* 13. make all images come horizontally */
+  .choices {
+    display: flex;  /* makes the image look round border */
+    justify-content: center;   /* aligh them horizontally */
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;   /* assign distance from top */
+  }
+  
+  /* 15. how we want to present our score board */
+  .score-board {
+    display: flex;   /* so that both div will aagrange horizontally on the same lines */
+    justify-content: center;   /* to bring them at the center */
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;   /* gap from the top */
+    gap: 5rem;    /* gap between both div */
+  }
+  
+  /* 16. we want score size look more bigger */
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  
+  /* 17(ii). margin from top for the message */
+  .msg-container {
+    margin-top: 5rem;
+  }
+  
+  /* 17. designing message container */
+  #msg {
+    background-color: #081b31;   /* backgroung color of message is black */
+    color: #fff;     /* text on that black background is white */
+    font-size: 2rem;    /* font of the message */
+    display: inline;     /* black background untill the message should be there no whole back line needed */
+    padding: 1rem;       /* space from text */
+    border-radius: 1rem;   /* make the borders look curved */
+  }

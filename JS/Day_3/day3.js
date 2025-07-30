@@ -128,6 +128,7 @@ for(let k = 0;k<=100;k++) {
 }
 
 //2(game)
+/*
 let gameNum = 25;
 let userNum = prompt("Guess the number: ");
 
@@ -135,8 +136,63 @@ while(userNum != gameNum) {
     userNum = prompt("You enter wrong number , Guess again: ");
 }
 console.log("Congratulations, you entered the right number");
-
+*/
 
 
 
 //Topic_3(Strings)
+//1(Create string)
+let str1 = "Sweta Yadav";     //1 way
+let str2 = 'Swati yadav ';    //2 way
+
+//these strings have some inbuilt properties and some inbuilt functions also which can also known as methods now first we focus on the properties
+//2(string length)
+console.log(str.length);      // out: 10
+console.log("str[0] = ",str[0]);
+console.log("str[1] = ",str[1]);
+console.log("str[2] = ",str[2]);
+console.log("str[3] = ",str[3]);
+console.log("str[4] = ",str[4]);
+console.log("str[5] = ",str[5]);
+console.log("str[6] = ",str[6]);
+console.log("str[7] = ",str[7]);
+console.log("str[8] = ",str[8]);
+console.log("str[9] = ",str[9]);
+console.log("str[10] = ",str[10]);
+console.log("str[11] = ",str[11]);
+/*
+out:
+str[0] =  S
+str[1] =  w
+str[2] =  e
+str[3] =  t
+str[4] =  a
+str[5] =  Y
+str[6] =  a
+str[7] =  d
+str[8] =  a
+str[9] =  v
+str[10] =  undefined
+str[11] =  undefined
+
+# position or index starts from the 0 
+# spaces are not counted as indexes
+*/
+
+//3(template litreal)
+let specialString = `this is a template litreal`;    //3rd way
+console.log(typeof specialString);      //out: string
+
+//why template is needed??
+//normal string
+let obj = {
+    item: "pen",
+    price: 10,
+};
+
+console.log("the cost of", obj.item,"is",obj.price,"rupees");
+
+//template string
+let output = `the cost of ${obj.item} is {obj.price} rupees`;
+console.log(output);
+

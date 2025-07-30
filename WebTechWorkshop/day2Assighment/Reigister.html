@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" required><br><br>
+
+            <label>Father's/Mother's Name:</label><br>
+            <input type="text" name="parentname"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Background</legend>
+
+            <label>Highest Qualification:</label><br>
+            <select name="qualification">
+                <option value="">--Select--</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="graduate">Graduate</option>
+                <option value="postgraduate">Postgraduate</option>
+            </select><br><br>
+
+            <label>Skills (you can select multiple):</label><br>
+            <input type="checkbox" name="skills" value="html"> HTML
+            <input type="checkbox" name="skills" value="css"> CSS
+            <input type="checkbox" name="skills" value="js"> JavaScript
+            <input type="checkbox" name="skills" value="python"> Python<br><br>
+
+            <label>Knowledge Level (0 = Beginner, 100 = Expert):</label><br>
+            <input type="range" name="knowledge" min="0" max="100"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Login Details</legend>
+
+            <label>Mobile Number:</label><br>
+            <input type="tel" name="mobile"><br><br>
+
+            <label>Username:</label><br>
+            <input type="text" name="username"><br><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="password"><br><br>
+        </fieldset>
+
+        <label>Any additional message:</label><br>
+        <textarea name="message" rows="4" cols="40" placeholder="Tell us more..."></textarea><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <br>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="about.html">About</a> |
+        <a href="register.html">Register</a>
+    </nav>
+</body>
+</html>
+

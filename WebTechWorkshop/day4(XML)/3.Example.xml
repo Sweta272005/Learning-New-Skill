@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <bookstore>
+        <category name="Fiction">
+            <book>
+                <title>The Alchemist</title>
+                <author>Paulo Coelho</author>
+                <year>1988</year>
+            </book>
+            <book>
+                <title>Harry Potter</title>
+                <author>J.K. Rowling</author>
+                <year>1997</year>
+            </book>
+        </category>
+
+        <category name="Science">
+            <book>
+                <title>A Brief History of Time</title>
+                <author>Stephen Hawking</author>
+                <year>1988</year>
+            </book>
+            <book>
+                <title>The Selfish Gene</title>
+                <author>Richard Dawkins</author>
+                <year>1976</year>
+            </book>
+        </category>
+
+        <category name="Technology">
+            <book>
+                <title>Clean Code</title>
+                <author>Robert C. Martin</author>
+                <year>2008</year>
+            </book>
+        </category>
+    </bookstore>
+</library>

@@ -1,0 +1,15 @@
+<!-- In a separate .dtd file -->
+
+<!-- Declares that <library> contains one or more <book> elements -->
+<!ELEMENT library (book+)>
+
+<!-- Declares <book> must contain <title>, <author>, and <year> in order -->
+<!ELEMENT book (title, author, year)>
+
+<!-- Declares that these tags contain only text -->
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+
+<!-- Declares that <book> must have an attribute 'id' which is required -->
+<!ATTLIST book id CDATA #REQUIRED>

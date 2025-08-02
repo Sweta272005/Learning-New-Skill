@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <library>
-    <bookstore>
+        <!-- 1. -->
         <category name="Fiction">
+            <!-- 1.(i)-->
             <book>
                 <title>The Alchemist</title>
                 <author>Paulo Coelho</author>
                 <year>1988</year>
             </book>
+            <!-- 1.(ii)-->
             <book>
                 <title>Harry Potter</title>
                 <author>J.K. Rowling</author>
@@ -14,12 +16,15 @@
             </book>
         </category>
 
+        <!-- 2. -->
         <category name="Science">
+            <!-- 2.(i)-->
             <book>
                 <title>A Brief History of Time</title>
                 <author>Stephen Hawking</author>
                 <year>1988</year>
             </book>
+            <!-- 2.(ii)-->
             <book>
                 <title>The Selfish Gene</title>
                 <author>Richard Dawkins</author>
@@ -27,12 +32,13 @@
             </book>
         </category>
 
+        <!-- 3. -->
         <category name="Technology">
+            <!-- 3.(i)-->
             <book>
                 <title>Clean Code</title>
                 <author>Robert C. Martin</author>
                 <year>2008</year>
             </book>
         </category>
-    </bookstore>
 </library>

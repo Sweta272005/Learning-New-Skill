@@ -1,0 +1,8 @@
+<!--
+Global Element
+Defined at the top level
+Can be reused
+-->
+<xs:element name="course" type="xs:string"/>
+
+<!-- You can now use <course> anywhere in your XML. -->

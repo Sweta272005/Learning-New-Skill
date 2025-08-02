@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Linking the external DTD file using SYSTEM keyword -->
+<!DOCTYPE library SYSTEM "library.dtd">
+
+<library>
+    <book id="B101">
+        <title>The Alchemist</title>
+        <author>Paulo Coelho</author>
+        <year>1988</year>
+    </book>
+
+    <book id="B102">
+        <title>Wings of Fire</title>
+        <author>A.P.J. Abdul Kalam</author>
+        <year>1999</year>
+    </book>
+</library>

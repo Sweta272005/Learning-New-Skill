@@ -1,0 +1,7 @@
+<!-- 1. Simple Type Element
+
+Holds just text, like a string, number, date, etc. -->
+
+<xs:element name="name" type="xs:string"/>
+<!-- example in xml -->
+<!-- <name>Iti Yadav</name>  -->

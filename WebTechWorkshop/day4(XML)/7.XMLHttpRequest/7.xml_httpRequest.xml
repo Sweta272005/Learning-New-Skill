@@ -1,0 +1,17 @@
+<!--
+which is used to send and receive data from a web server without reloading the page — the foundation of AJAX (Asynchronous JavaScript and XML).
+-->
+
+<!-- 
+What is XMLHttpRequest?
+
+A JavaScript object used to interact with servers.
+Can send or receive data from a URL.
+Works with XML, JSON, or plain text.
+Useful in web apps to update content dynamically.
+
+-->
+<!-- basic syntax -->
+let xhr = new XMLHttpRequest();
+xhr.open("GET", "data.xml", true);
+xhr.send();

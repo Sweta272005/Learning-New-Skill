@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Form Example</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+  <form action="/submit" method="POST">
+    
+    <!-- Username -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"  value ="hello " placeholder="Enter username">
+    <h3></h3>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password">
+    <h3></h3>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" name="gender"  id="male"> <label for="male">Male</label>
+    <input type="radio" name="gender"  id="female"> <label for="female">Female</label>
+    <h3></h3>
+
+    <!-- Languages known -->
+    <label>Languages:</label>
+    <input type="checkbox" name="lang" value="HTML" id="html"> <label for="html">HTML</label>
+    <input type="checkbox" name="lang" value="CSS" id="css"> <label for="css">CSS</label>
+    <input type="checkbox" name="lang" value="JS" id="js"> <label for="js">JavaScript</label>
+    <h3></h3>
+
+    <!-- Submit button -->
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>

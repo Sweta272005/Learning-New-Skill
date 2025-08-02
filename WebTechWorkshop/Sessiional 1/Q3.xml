@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <name>Sweta Yadav</name>
+    <rollnumber>123456</rollnumber>
+    <department>Computer Science and Engineering</department>
+    <email>sweta.yadav@example.com</email>
+    <address>Greater Noida, Uttar Pradesh, India</address>
+</student>

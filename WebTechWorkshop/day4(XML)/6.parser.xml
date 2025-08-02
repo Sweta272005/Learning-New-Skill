@@ -1,0 +1,7 @@
+<!--
+An XML parser is a software or tool that reads an XML file and:
+
+Checks its structure (well-formed or not)
+Validates it (against DTD or XSD if provided)
+Extracts data from XML for use in applications
+-->

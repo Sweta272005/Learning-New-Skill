@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekday Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    select, p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Select a Day of the Week</h2>
+
+  <select id="daySelect" onchange="checkDay()">
+    <option value="">-- Select a Day --</option>
+    <option value="Sunday">Sunday</option>
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+  </select>
+
+  <p id="result"></p>
+
+  <script>
+    function checkDay() {
+      const day = document.getElementById("daySelect").value;
+      const result = document.getElementById("result");
+
+      switch(day) {
+        case "Sunday":
+          result.textContent = "It's a Holiday! 🎉";
+          break;
+        case "Saturday":
+          result.textContent = "Weekend! Take some rest.";
+          break;
+        case "Monday":
+        case "Tuesday":
+        case "Wednesday":
+        case "Thursday":
+        case "Friday":
+          result.textContent = "It's a Working Day.";
+          break;
+        default:
+          result.textContent = "";
+      }
+    }
+  </script>
+
+</body>
+</html>

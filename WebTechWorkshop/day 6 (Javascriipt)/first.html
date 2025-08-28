@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(){
+            event.preventDefault();
+            let a = parseFloat(document.getElementById("x").value);
+            let b = parseFloat(document.getElementById("y").value);
+            let sum=a+b;
+            document.getElementById("res").innerText="Result is : "+sum;
+        }
+        function sub(){
+            event.preventDefault();
+            let a = parseFloat(document.getElementById("x").value);
+            let b = parseFloat(document.getElementById("y").value);
+            let sub=a-b;
+            document.getElementById("hes").innerText="Result is : "+sub;
+        }
+        function mul(){
+            event.preventDefault();
+            let a = parseFloat(document.getElementById("x").value);
+            let b = parseFloat(document.getElementById("y").value);
+            let mul=a*b;
+            document.getElementById("les").innerText="Result is : "+mul;
+        }
+
+        function div(){
+            event.preventDefault();
+            let a = parseFloat(document.getElementById("x").value);
+            let b = parseFloat(document.getElementById("y").value);
+            let div=a/b;
+            document.getElementById("tes").innerText="Result is : "+div;
+        }
+    </script>
+    <form>
+        <label for="x">Enter first number : </label>
+        <input type="text" id="x"><br><br>
+        
+        <!-- <label for="z">Enter Operator : </label>
+        <input type="text" id="z"><br><br> -->
+        
+        <label for="y">Enter Second number : </label>
+        <input type="text" id="y"><br><br>
+
+        <input type="submit" value="add" onclick="add()">
+        <input type="submit" value="sub" onclick="sub()">
+        <input type="submit" value="mul" onclick="mul()">
+        <input type="submit" value="div" onclick="div()">
+        <p id="res"></p>
+        <p id="hes"></p>
+        <p id="les"></p>
+        <p id="tes"></p>
+
+
+    </form>
+</body>
+</html>

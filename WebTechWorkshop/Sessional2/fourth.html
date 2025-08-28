@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <style>
+    .message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .success {
+      color: green;
+    }
+    .error {
+      color: red;
+    }
+    form {
+      max-width: 350px;
+      margin: 40px auto;
+    }
+    input, button {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Login Form</h2>
+
+<form id="loginForm">
+  <input type="text" id="loginUsername" placeholder="Enter Username">
+  <input type="password" id="loginPassword" placeholder="Enter Password">
+  <button type="submit">Login</button>
+  <div id="loginMsg" class="message"></div>
+</form>
+
+<script>
+  // Stored user state
+  const userDetails = {
+    username: 'user123',
+    password: 'password123'
+  };
+
+  // Arrow function for handling login
+  const handleLogin = (event) => {
+    event.preventDefault(); // Prevent form reload
+
+    // Get submitted values
+    const inputUsername = document.getElementById("loginUsername").value.trim();
+    const inputPassword = document.getElementById("loginPassword").value;
+
+    // Destructure from userDetails
+    const { username, password } = userDetails;
+
+    const msgDiv = document.getElementById("loginMsg");
+
+    if (inputUsername === username && inputPassword === password) {
+      msgDiv.textContent = "Login successful!";
+      msgDiv.className = "message success";
+    } else {
+      msgDiv.textContent = "Invalid username or password.";
+      msgDiv.className = "message error";
+    }
+  };
+
+  // Attach to form submit
+  document.getElementById("loginForm").addEventListener("submit", handleLogin);
+</script>
+
+</body>
+</html>

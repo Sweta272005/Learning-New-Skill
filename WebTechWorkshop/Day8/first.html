@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Callback Function Example</h2>
+    <!-- <p>The sum is: <span id="result"></span></p> -->
+
+    <script>
+        function add(a,b,callback){
+            let sum=a+b;
+            callback(sum);
+        }
+
+        function res(result){
+            document.write("Sum is : "+result);
+        }
+
+        add(20,25,res);
+    </script>
+
+       
+</body>
+
+</html>

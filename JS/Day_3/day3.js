@@ -196,3 +196,4 @@ console.log("the cost of", obj.item,"is",obj.price,"rupees");
 let output = `the cost of ${obj.item} is {obj.price} rupees`;
 console.log(output);
 
+
